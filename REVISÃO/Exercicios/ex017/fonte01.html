@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas
+            cm (centimetro)
+            mm (milimitro)
+            in (polegadas)
+            px (pixel)
+            pt (ponto)
+            pc (paica) 
+            Medidas Relativas 
+            em (relativo ao tamanho atual da fonte)
+            ex (relativo a altura x de uma fonte)
+            rem (relativo a fonte que está configurada no body)
+            vw (relativo a largura do seu porte "tamanho da sua tela")
+            vh (relativo a altura do seu porte "tamanho da sua tela")
+            %
+
+            Observação: 16px geralmente = 1em
+                        32px = 2em 
+
+            Observação: recomendado pela W3C utilizar as medidas "px" e "em". 
+            
+            */
+            
+            font-size: 1em;
+
+            /* font-wigth (peso) = lighter, normal, bold e bolder */
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em
+            font-style: italic;
+
+            /*shorthand font 
+            -> font-style -> font-weight -> font-size -> font-family 
+
+            Obseração: utilizar uma sentença 'shorthand' é realizar todas as configurações utilizando apenas uma linha. 
+            
+            Neste caso criamos uma shorthand para realizar todas as configurações referentes a 'font', porém é necessário que a shorthand siga exatamente a ordem descrita acima para sua correta funcionalidade.*/
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }      
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugit consequuntur id quidem, numquam vitae dolores. Molestiae, assumenda architecto. Molestias, odit. Ut eum reprehenderit corporis explicabo dolores possimus deserunt magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magni suscipit aut soluta minima aliquid, quasi veniam dolorum laudantium dolores quidem cum repellat a, totam, eius facilis. Vel, inventore provident. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis voluptatem odit laborum debitis aliquid cupiditate similique inventore? Doloremque minus minima non mollitia dolore voluptatum maiores. Officiis enim ea possimus mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam temporibus minima tenetur tempore, veniam eveniet officiis at dolorem exercitationem adipisci quaerat architecto? Adipisci optio porro sapiente expedita laborum corrupti.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quibusdam id vero, illum, enim quod saepe excepturi praesentium ut iste, similique sint deleniti maiores. Fugiat, deleniti? Quisquam facere a eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe neque sit ipsa in laborum. Possimus veritatis velit consectetur officia, rerum provident eos exercitationem error, illum corrupti, blanditiis asperiores in.</p>
+
+</body>
+</html>

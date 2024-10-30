@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*
+    Em Html é id em CSS será # e será aplicado apenas em um unico elemento.
+    Em Html é class em CSS será . e será aplicado para mais de um elemento. 
+*/
+
+body {
+    background-color: rgb(221, 233, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(20, 139, 9);
+}
+
+h1#principal {
+    text-align: center;
+    color: rgb(44, 8, 77);
+    background-color: aqua;
+}
+
+h2 {
+    color: rgb(170, 30, 135);
+}
+
+.basico {
+    color: rgb(255, 108, 23);
+}
+
+.intermediario {
+    color: silver;
+}
+
+.avancado {
+    color: gold;
+}
