@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: rgb(26, 26, 26);
+    background-image: url('../imagens/wallpaper12casas.jpg');
     font-size: 17px;
     font-family: var(--fonte-padrão);
 }
