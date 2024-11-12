@@ -1,0 +1,1 @@
+background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor5));

@@ -33,7 +33,7 @@ a.externo::after {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor5));
+    background-image: url('../imagens/seiya01.jpg');
     min-height: 150px;
     max-width: 1200px;
     margin: auto;
