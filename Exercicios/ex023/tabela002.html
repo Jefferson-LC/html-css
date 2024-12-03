@@ -6,12 +6,27 @@
     <title>Tabelas</title>
     <style>
         body {
+            background-color: rgba(255, 188, 202, 0.616);
             font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+
+        body > p {
+            width: 600px;
+            text-align: justify;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,10 +42,36 @@
             text-align: center;
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: darkgray;
+            /* 
+            2n = uma linha fica de uma cor e a outra de outra cor.
+            3n = a cada 3 linhas a terceira fica de uma cor. 
+            4n = a cada 4 linhas a quarta fica de uma cor.
+            5n 6n 7n ... assim por diante. 
+
+            se no lugar de "2n 3n 4n ..." colocar as opções: 
+            odd = todas as linhas impares serão de uma cor. 
+            even = todas as linhas pares serão de uma cor.   
+            */
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(190, 239, 255, 0.555);
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        
 
     </style>
 </head>
@@ -39,6 +80,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (legenda da tabela)
             THEAD
                 TR, TD, TH
             TBODY
@@ -48,11 +90,12 @@
     --> 
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -195,10 +238,29 @@
         <tfoot>
             <tr>
                 <th></th>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus, nemo numquam praesentium at debitis, facere quibusdam cupiditate veniam, perspiciatis quas harum illum ipsum ullam maxime. Laborum eligendi omnis aperiam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi molestiae quidem fuga ipsa similique officiis maiores? Ipsum facilis, repudiandae adipisci natus labore eveniet quas quae tempore, harum sunt eius provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquid sed dolorum! Nostrum explicabo sed voluptate voluptatum eligendi architecto pariatur iste consectetur a! Animi, repellat facilis fugiat vero unde iure!</p>
 </body>
 </html>
