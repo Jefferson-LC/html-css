@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Tabela 002</title>
+    <Style>
+        Body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table.Collapse {
+            width: 350px;
+            border-collapse: collapse;           
+        }
+
+        table.Separate {
+            width: 350px;
+            border-collapse: separate;           
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td.rdestaque {
+            background-color: blue;
+            color: white;
+        }
+
+        td.cdestaque { 
+            background-color: red;
+            color: yellow;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Tabelas Mescladas</h1>  
+    <h2>Tabela Collapse</h2>
+    <table class="Collapse">
+        <tr>
+            <td colspan="4" class="cdestaque">A</td>
+            <td rowspan="4" class="rdestaque">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="rdestaque">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="cdestaque">M</td>
+        </tr>
+    </table>
+    <h2>Tabela Separate</h2>
+    <table class="Separate">
+        <tr>
+            <td colspan="4" class="cdestaque">A</td>
+            <td rowspan="4" class="rdestaque">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="rdestaque">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="cdestaque">M</td>
+        </tr>
+    </table>
+</body>
+</html>
